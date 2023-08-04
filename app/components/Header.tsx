@@ -27,7 +27,7 @@ const Header = () => {
                             placeholder=""
                             className="w-[25rem] rounded-full outline-0" />
                         <div className="flex items-center absolute w-full pl-6 font-semibold text-gray-600 text-[14px] pr-3">
-                            <button className="w-full text-slate-400 justify-start flex sm:text-[14px] sm:items-start md:justify-start l:text-[17px]">L'aventure commence ici</button>
+                            <button className="w-full text-slate-400 justify-start flex sm:text-[14px] sm:items-start md:justify-start l:text-[17px]">L’aventure commence ici</button>
                         </div>
 
                         {/*LOUPE*/}
