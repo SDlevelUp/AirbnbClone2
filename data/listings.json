@@ -1,257 +1,137 @@
 [
     {
         "id": "1",
-        "name": "Maison de luxe",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "2",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "3",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "4",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "5",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "6",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "7",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
-    },
-    {
-        "id": "1",
-        "name": "Maison avec jardin",
-        "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
-        "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "8",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "9",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "10",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "11",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "12",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "13",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     },
     {
         "id": "14",
-        "name": "Maison avec jardin",
+        "description": "Particulier",
         "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
         "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
-        "rating": "5",
-        "price": "300",
-        "location": "Saint Denis D'Oléron, France",
-        "equipments": [
-            "Cuisine",
-            "Télévision",
-            "Cheminée",
-            "Frigo",
-            "Wifi",
-            "Sèche-linge"
-        ]
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
+    },
+    {
+        "id": "15",
+        "description": "Particulier",
+        "cover": "https://img.freepik.com/photos-gratuite/maison-design-villa-moderne-salon-decloisonne-chambre-privee-aile-grande-terrasse-intimite_1258-169741.jpg?w=1380&t=st=1690364126~exp=1690364726~hmac=ef3387095e92ecaadb2a058ecba0290a35a3476859ce8dda996771f7e6e3bb76",
+        "title": "Magnifique maison de vacance avec jardin 4 à 8 personnes",
+        "rating": 5,
+        "price": 300,
+        "location": "Saint Denis D'Oléron, France"
     }
 ]

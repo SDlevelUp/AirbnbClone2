@@ -120,7 +120,9 @@ const LoginModal = () => {
                             cursor-pointer 
                             hover:underline
                         "
-                    > Créer un compte</span>
+                    >
+                        Créer un compte
+                    </span>
                 </p>
             </div>
         </div>

@@ -3,8 +3,8 @@ import Navbar from "./components/navbar/Navbar";
 import RegisterModal from "./components/modals/RegisterModal";
 import ToasterProvider from "./providers/ToasterProvider";
 import LoginModal from "./components/modals/LoginModal";
+import Footer from "./components/Footer";
 import './globals.css';
-
 export const metadata = {
   title: 'Airbnb',
   description: 'Airbnb Clone',
@@ -25,9 +25,10 @@ export default async function RootLayout({
           <RegisterModal />
           <Navbar />
         </ClientOnly>
-        <div className="pb-20 pt-28">
+        <div className="pb-11 pt-28">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   )
