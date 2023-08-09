@@ -3,12 +3,22 @@ import { useSearchParams } from 'next/navigation';
 
 import CategoryBox from "../CategoryBox";
 import Container from "../Container";
-import { TbBeach, TbPool } from 'react-icons/tb'
-import { GiCampingTent } from 'react-icons/gi'
-import { MdOutlineVilla, MdPark } from 'react-icons/md';
+
 import { FaSkiingNordic } from 'react-icons/fa';
+import { TbBeach, TbPool } from 'react-icons/tb'
 import { GoKey } from 'react-icons/go';
-import { GiIsland, GiFlyingFox } from 'react-icons/gi';
+import {
+    MdOutlineVilla,
+    MdPark,
+    MdSportsGolf
+} from 'react-icons/md';
+import {
+    GiIsland,
+    GiFlyingFox,
+    GiCampingTent,
+    GiBarn,
+    GiTipi
+} from 'react-icons/gi';
 
 export const categories = [
     {
@@ -54,6 +64,21 @@ export const categories = [
     {
         label: 'Piscine',
         icon: TbPool,
+        description: 'Cette propriété possède une piscine privée ou a proximité'
+    },
+    {
+        label: 'Fermes',
+        icon: GiBarn,
+        description: 'Cette propriété possède une piscine privée ou a proximité'
+    },
+    {
+        label: 'Golf',
+        icon: MdSportsGolf,
+        description: 'Cette propriété possède une piscine privée ou a proximité'
+    },
+    {
+        label: 'Tipi',
+        icon: GiTipi,
         description: 'Cette propriété possède une piscine privée ou a proximité'
     },
 ]

@@ -1,14 +1,21 @@
 'use client';
 import { useCallback, useState } from "react";
-
+import { User } from '@prisma/client';
+import { signOut } from "next-auth/react";
 import Avatar from "../Avatar";
 import MenuItem from "./MenuItem";
-
 import { RiMenu2Line } from "react-icons/ri";
+
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
 
-const UserMenu = () => {
+interface UserMenuProps {
+    currentUser?: User | null;
+}
+
+const UserMenu: React.FC<UserMenuProps> = ({
+    currentUser,
+}) => {
     const registerModal = useRegisterModal();
     const loginModal = useLoginModal();
 
@@ -78,27 +85,64 @@ const UserMenu = () => {
                         text-sm
                     "
                 >
-                    <div
-                        className="
-                            flex
-                            flex-col
-                            cursor-pointer
-                        "
-                    >
-                        <>
-                            <MenuItem
-                                label="Connexion"
-                                onclick={(loginModal.onOpen)}
-                            />
-                            <MenuItem
-                                label="S'enregistrer"
-                                onclick={(registerModal.onOpen)}
-                            />
-                        </>
+                    <div className="flex flex-col cursor-pointer">
+                        {currentUser ? (
+                            // Si l'utilisateur est connecté
+                            <>
+
+                                <MenuItem
+                                    label="Messages"
+                                    onclick={() => { }}
+                                />
+
+                                <MenuItem
+                                    label="Notifications"
+                                    onclick={() => { }}
+                                />
+
+                                <MenuItem
+                                    label="Voyages"
+                                    onclick={() => { }}
+                                />
+
+                                <MenuItem
+                                    label="Mes favoris"
+                                    onclick={() => { }}
+                                />
+                                <hr />
+                                <MenuItem
+                                    label="Mettre mon logement sur Airbnb"
+                                    onclick={() => { }}
+                                />
+                                <MenuItem
+                                    label="Compte"
+                                    onclick={() => { }}
+                                />
+
+                                <hr />
+
+                                <MenuItem
+                                    label="Déconnexion"
+                                    onclick={() => { signOut() }}
+                                />
+                            </>
+                        ) : (
+                            // Si l'utilisateur n'est pas connecté
+                            <>
+                                <MenuItem
+                                    label="Connexion"
+                                    onclick={loginModal.onOpen}
+                                />
+                                <MenuItem
+                                    label="S'enregistrer"
+                                    onclick={registerModal.onOpen}
+                                />
+                            </>
+                        )}
                     </div>
                 </div>
             )}
-        </div >
-    )
-}
+        </div>
+    );
+};
 export default UserMenu;
