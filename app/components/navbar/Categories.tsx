@@ -153,76 +153,50 @@ const Categories = () => {
     const containerRef = useRef<HTMLDivElement | null>(null);
     const [scrollableLeft, setScrollableLeft] = useState(false);
     const [scrollableRight, setScrollableRight] = useState(false);
-    const [isEndReached, setIsEndReached] = useState(false);
 
     useEffect(() => {
         if (containerRef.current) {
             setScrollableLeft(containerRef.current.scrollLeft > 0);
-            setScrollableRight(
-                containerRef.current.scrollLeft <
-                containerRef.current.scrollWidth -
-                containerRef.current.clientWidth
-            );
-            setIsEndReached(
-                containerRef.current.scrollLeft >=
-                containerRef.current.scrollWidth -
-                containerRef.current.clientWidth
-            );
+            setScrollableRight(containerRef.current.scrollLeft < containerRef.current.scrollWidth - containerRef.current.clientWidth);
         }
     }, []);
 
     const scrollLeft = () => {
         if (containerRef.current) {
-            containerRef.current.scrollLeft -= 500;
+            containerRef.current.scrollLeft -= 500; // Ajustez la valeur de défilement
         }
     };
 
     const scrollRight = () => {
         if (containerRef.current) {
-            containerRef.current.scrollLeft += 300;
+            containerRef.current.scrollLeft += 300; // Ajustez la valeur de défilement
         }
     };
 
     return (
         <Container>
-            <div className="relative pt-4">
-                <div className="flex flex-row items-center justify-between custom-scrollbar">
-                    <button
-                        onClick={scrollLeft}
-                        className={`mr-2 scroll-button ${scrollableLeft ? 'opacity-100' : ''
-                            }`}
-                    >
-                        <div className="backdrop-filter backdrop-blur-lg bg-opacity-75 rounded-full p-1">
-                            <BsArrowLeftCircle size={24} />
-                        </div>
-                    </button>
-                    <div
-                        className="flex overflow-x-auto pr-4"
-                        ref={containerRef}
-                        style={{ overflowX: 'hidden' }}
-                    >
-                        {categories.map((item) => (
-                            <CategoryBox
-                                key={item.label}
-                                label={item.label}
-                                icon={item.icon}
-                                selected={category === item.label}
-                            />
-                        ))}
-                    </div>
-                    <button
-                        onClick={scrollRight}
-                        className={`ml-2 scroll-button ${scrollableRight ? 'opacity-100' : ''
-                            }`}
-                    >
-                        <div className="backdrop-filter backdrop-blur-lg bg-opacity-75 rounded-full p-1">
-                            <BsArrowRightCircle size={24} />
-                        </div>
-                    </button>
+            <div className="pt-4 flex flex-row items-center justify-between custom-scrollbar" style={{
+                scrollBehavior: 'smooth'
+            }}>
+                <button onClick={scrollLeft} className={`mr-2 ${scrollableLeft ? 'opacity-100' : ''}`}>
+                    <BsArrowLeftCircle size={24} className=' hover:opacity-75' />
+                </button>
+                <div className="flex overflow-x-auto pr-4" ref={containerRef} style={{ overflowX: 'hidden' }}>
+                    {categories.map((item) => (
+                        <CategoryBox
+                            key={item.label}
+                            label={item.label}
+                            icon={item.icon}
+                            selected={category === item.label}
+                        />
+                    ))}
                 </div>
+                <button onClick={scrollRight} className={`ml-2 ${scrollableRight ? 'opacity-100' : ''}`}>
+                    <BsArrowRightCircle size={24} />
+                </button>
             </div>
         </Container>
-    );
-};
+    )
+}
 
 export default Categories;
