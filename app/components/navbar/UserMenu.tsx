@@ -56,7 +56,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         flex 
                         flex-row 
                         items-center 
-                        gap-3 
+                        gap-3
                         rounded-full 
                         cursor-pointer 
                         hover:shadow-md 
@@ -81,7 +81,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         bg-white 
                         overflow-hidden 
                         right-0 
-                        top-12 
+                        top-15
                         text-sm
                     "
                 >
@@ -91,38 +91,36 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             <>
 
                                 <MenuItem
-                                    label="Messages"
+                                    label={<span className="font-bold">Messages</span>}
                                     onclick={() => { }}
                                 />
 
                                 <MenuItem
-                                    label="Notifications"
+                                    label={<span className="font-bold">Notifications</span>}
                                     onclick={() => { }}
                                 />
 
                                 <MenuItem
-                                    label="Voyages"
+                                    label={<span className="font-bold">Voyages</span>}
                                     onclick={() => { }}
                                 />
 
                                 <MenuItem
-                                    label="Mes favoris"
+                                    label={<span className="font-bold">Favoris</span>}
                                     onclick={() => { }}
                                 />
                                 <hr />
                                 <MenuItem
-                                    label="Mettre mon logement sur Airbnb"
+                                    label={<span className="text-[#161616] font-normal ">Mettre mon logement sur Airbnb</span>}
                                     onclick={() => { }}
                                 />
                                 <MenuItem
-                                    label="Compte"
+                                    label={<span className="text-[#161616] font-normal">Mon compte</span>}
                                     onclick={() => { }}
                                 />
-
                                 <hr />
-
                                 <MenuItem
-                                    label="Déconnexion"
+                                    label={<span className="text-[#161616] font-normal">Déconnexion</span>}
                                     onclick={() => { signOut() }}
                                 />
                             </>

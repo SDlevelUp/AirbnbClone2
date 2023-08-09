@@ -5,27 +5,28 @@ import ClientOnly from "./components/ClientOnly";
 import listingsData from "../data/listings.json";
 import InfoCard from "./components/InfoCard";
 import Container from "./components/Container";
-
+import Footer from "./components/Footer";
 export default function Home() {
     return (
         <ClientOnly>
             <Container>
                 <div
                     className="
-                            pt-24
-                            grid 
-                            grid-cols-1
-                            sm:grid-cols-2 
-                            md:grid-cols-3 
-                            lg:grid-cols-4
-                            xl:grid-cols-5
-                            2xl:grid-cols-4
-                            gap-8
+                    pt-24
+                    grid 
+                    grid-cols-1 
+                    sm:grid-cols-2 
+                    md:grid-cols-3 
+                    lg:grid-cols-4
+                    xl:grid-cols-5
+                    2xl:grid-cols-6
+                    gap-8
                         "
                 >
                     {listingsData.map((listing) => (
                         <InfoCard
                             key={listing.id}
+                            name=""
                             description={listing.description}
                             cover={listing.cover}
                             location={listing.location}
@@ -34,8 +35,10 @@ export default function Home() {
                         />
                     ))}
                 </div>
-
             </Container>
+            <div className="pt-20">
+                <Footer />
+            </div>
         </ClientOnly>
     );
 }

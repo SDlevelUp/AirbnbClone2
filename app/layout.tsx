@@ -1,17 +1,22 @@
-import ClientOnly from "./components/ClientOnly";
-import Navbar from "./components/navbar/Navbar";
-import RegisterModal from "./components/modals/RegisterModal";
-import ToasterProvider from "./providers/ToasterProvider";
-import LoginModal from "./components/modals/LoginModal";
-import Footer from "./components/Footer";
+import { Nunito } from 'next/font/google'
 import getCurrentUser from "./actions/getCurrentUser";
+import ClientOnly from "./components/ClientOnly";
 
+import Navbar from "./components/navbar/Navbar";
+
+import LoginModal from "./components/modals/LoginModal";
+import RegisterModal from "./components/modals/RegisterModal";
+
+import ToasterProvider from "./providers/ToasterProvider";
 import './globals.css';
+
 export const metadata = {
   title: 'Airbnb',
   description: 'Airbnb Clone',
 }
-
+const font = Nunito({
+  subsets: ['latin'],
+});
 export default async function RootLayout({
   children,
 }: {
@@ -21,17 +26,17 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body>
+      <body className={font.className}>
         <ClientOnly>
           <ToasterProvider />
           <LoginModal />
           <RegisterModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-        <div className="pb-11 pt-28">
+        <div className="pt-28">
           {children}
         </div>
-        <Footer />
+
       </body>
     </html>
   )

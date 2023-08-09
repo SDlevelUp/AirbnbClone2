@@ -6,7 +6,6 @@ import prisma from "@/app/libs/prismadb";
 export async function getSession() {
     return await getServerSession(authOptions)
 }
-
 export default async function getCurrentUser() {
     try {
         const session = await getSession();
@@ -27,12 +26,9 @@ export default async function getCurrentUser() {
 
         return {
             ...currentUser,
-            createdAt: currentUser.createdAt.toISOString(),
-            updatedAt: currentUser.updatedAt.toISOString(),
-            emailVerified:
-                currentUser.emailVerified instanceof Date
-                    ? currentUser.emailVerified.toISOString()
-                    : null,
+            createdAt: new Date(currentUser.createdAt), // Conversion en Date
+            updatedAt: new Date(currentUser.updatedAt), // Conversion en Date
+            emailVerified: currentUser.emailVerified ? new Date(currentUser.emailVerified) : null,
         };
     } catch (error: any) {
         return null;

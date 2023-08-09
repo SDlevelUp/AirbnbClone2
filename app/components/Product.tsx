@@ -6,17 +6,18 @@ const Product = () => {
   return (
     <Container>
       <div className="
-        pt-48
-        grid 
-        grid-cols-1 
-        sm:grid-cols-2 
-        md:grid-cols-3 
-        lg:grid-cols-4
-        xl:grid-cols-4
-        2xl:grid-cols-5
-        gap-8"
+                pt-24
+                grid 
+                grid-cols-1 
+                sm:grid-cols-2 
+                md:grid-cols-3 
+                lg:grid-cols-4
+                xl:grid-cols-5
+                2xl:grid-cols-6
+                gap-8
+          "
       >
-        {Products && Products.map((listing: any) => (
+        {Products.map((listing: any) => (
           <InfoCard
             key={listing.id}
             name={listing.name}
@@ -24,7 +25,7 @@ const Product = () => {
             location={listing.location}
             price={listing.price}
             rating={listing.rating}
-            equipments={listing.equipments}
+            description={listing.description}
           />
         ))}
       </div>
