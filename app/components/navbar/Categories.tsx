@@ -163,13 +163,13 @@ const Categories = () => {
 
     const scrollLeft = () => {
         if (containerRef.current) {
-            containerRef.current.scrollLeft -= 500; // Ajustez la valeur de défilement
+            containerRef.current.scrollLeft -= 200;
         }
     };
 
     const scrollRight = () => {
         if (containerRef.current) {
-            containerRef.current.scrollLeft += 300; // Ajustez la valeur de défilement
+            containerRef.current.scrollLeft += 200;
         }
     };
 
@@ -192,10 +192,10 @@ const Categories = () => {
                     ))}
                 </div>
                 <button onClick={scrollRight} className={`ml-2 ${scrollableRight ? 'opacity-100' : ''}`}>
-                    <BsArrowRightCircle size={24} />
+                    <BsArrowRightCircle size={24} className=' hover:opacity-75' />
                 </button>
             </div>
-        </Container>
+        </Container >
     )
 }
 
