@@ -29,6 +29,7 @@ import {
     GiRetroController,
     GiDesert,
     GiPisaTower,
+    GiRiver,
 } from 'react-icons/gi';
 
 
@@ -137,6 +138,11 @@ export const categories = [
     {
         label: 'Désert',
         icon: GiDesert,
+        description: 'Cette propriété possède une piscine privée ou a proximité'
+    },
+    {
+        label: 'Bord de rivière',
+        icon: GiRiver,
         description: 'Cette propriété possède une piscine privée ou a proximité'
     },
     {

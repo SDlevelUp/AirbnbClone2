@@ -9,8 +9,9 @@ const nextConfig = {
   },
   images: {
     domains: [
-      'static.pap.fr',
       'img.freepik.com',
+      'images.unsplash.com',
+      'plus.unsplash.com'
     ],
   },
   webpack: (config) => {
