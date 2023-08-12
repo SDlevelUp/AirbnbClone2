@@ -29,6 +29,7 @@ const Search = () => {
                         text-sm
                         font-bold
                         px-6
+                        whitespace-nowrap
                     "
                 >
                     N’importe où
@@ -43,6 +44,7 @@ const Search = () => {
                     border-x-[1px] 
                     flex-1 
                     text-center
+                    whitespace-nowrap
                     "
                 >
                     Une semaine
@@ -58,7 +60,7 @@ const Search = () => {
                     items-center 
                     gap-3
                 ">
-                    <div className="hidden sm:block">
+                    <div className="hidden sm:block whitespace-nowrap">
                         Ajouter des voyageurs
                     </div>
                     <div

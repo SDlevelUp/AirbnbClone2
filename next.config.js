@@ -11,12 +11,9 @@ const nextConfig = {
     domains: [
       'img.freepik.com',
       'images.unsplash.com',
-      'plus.unsplash.com'
+      'plus.unsplash.com',
+      'avatars.githubusercontent.com',
     ],
-  },
-  webpack: (config) => {
-    config.resolve.alias['@'] = path.join(__dirname, 'chemin/vers/le/dossier');
-    return config;
   },
 };
 

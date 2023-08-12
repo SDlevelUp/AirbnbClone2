@@ -1,9 +1,9 @@
 'use client'
 
 import axios from "axios";
-import { AiFillGithub } from "react-icons/ai";
 import { signIn } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
+import { AiFillGithub } from "react-icons/ai";
 import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
 import {

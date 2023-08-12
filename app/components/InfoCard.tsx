@@ -13,11 +13,11 @@ interface InfoCardProps {
 }
 
 const InfoCard: React.FC<InfoCardProps> = ({
-  cover,
   description,
+  cover,
   location,
-  price,
   rating,
+  price,
 }) => {
   return (
     <div className="col-span-1 cursor-pointer group pb-4">
