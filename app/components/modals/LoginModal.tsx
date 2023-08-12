@@ -6,6 +6,7 @@ import { signIn } from 'next-auth/react';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { FcGoogle } from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
@@ -96,15 +97,21 @@ const LoginModal = () => {
             <hr />
             <Button
                 outline
-                label="Continue avec Google"
+                label="Continuer avec Google"
                 icon={FcGoogle}
                 onClick={() => signIn('google')}
             />
             <Button
                 outline
-                label="Continue avec Github"
+                label="Continuer avec Github"
                 icon={AiFillGithub}
                 onClick={() => signIn('github')}
+            />
+            <Button
+                outline
+                label="Continuer avec Facebook"
+                icon={BsFacebook}
+                onClick={() => signIn('facebook')}
             />
             <div className="
                 text-neutral-500 text-center mt-4 font-light">
