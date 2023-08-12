@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-
-const path = require('path');
-
 const nextConfig = {
   experimental: {
     appDir: true,
@@ -13,6 +10,7 @@ const nextConfig = {
       'images.unsplash.com',
       'plus.unsplash.com',
       'avatars.githubusercontent.com',
+      'lh3.googleusercontent.com',
     ],
   },
 };

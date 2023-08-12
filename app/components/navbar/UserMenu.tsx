@@ -11,15 +11,15 @@ import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
 
 interface UserMenuProps {
-    currentUser?: SafeUser | null;
+    currentUser?: SafeUser | null
 }
 // const router = useRouter();
 const UserMenu: React.FC<UserMenuProps> = ({
     currentUser,
 }) => {
+
     const registerModal = useRegisterModal();
     const loginModal = useLoginModal();
-
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = useCallback(() => {
         setIsOpen((value) => !value);

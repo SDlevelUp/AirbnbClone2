@@ -3,11 +3,7 @@
 import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
 import { signIn } from 'next-auth/react';
-import {
-    FieldValues,
-    SubmitHandler,
-    useForm
-} from "react-hook-form";
+import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { FcGoogle } from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
 import { useRouter } from "next/navigation";
@@ -39,30 +35,30 @@ const LoginModal = () => {
         },
     });
 
-    const onSubmit: SubmitHandler<FieldValues> =
-        (data) => {
-            setIsLoading(true);
+    const onSubmit: SubmitHandler<FieldValues> = (data) => {
+        setIsLoading(true);
 
-            signIn('credentials', {
+        signIn('credentials',
+            {
                 ...data,
                 redirect: false,
             })
-                .then((callback) => {
-                    setIsLoading(false);
+            .then((callback) => {
+                setIsLoading(false);
 
-                    if (callback?.ok) {
-                        toast.success('Connexion réussie!');
-                        router.refresh();
-                        loginModal.onClose();
-                    }
+                if (callback?.ok) {
+                    toast.success('Connexion réussie!');
+                    router.refresh();
+                    loginModal.onClose();
+                }
 
-                    if (callback?.error) {
-                        toast.error(callback.error);
-                    }
-                });
-        }
+                if (callback?.error) {
+                    toast.error(callback.error);
+                }
+            });
+    }
 
-    const onToggle = useCallback(() => {
+    const toggle = useCallback(() => {
         loginModal.onClose();
         registerModal.onOpen();
     }, [loginModal, registerModal])
@@ -114,7 +110,7 @@ const LoginModal = () => {
                 text-neutral-500 text-center mt-4 font-light">
                 <p>C’est ton premier jour sur Airbnb?
                     <span
-                        onClick={onToggle}
+                        onClick={toggle}
                         className="
                             text-neutral-800
                             cursor-pointer 
