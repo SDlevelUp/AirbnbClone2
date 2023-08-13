@@ -14,6 +14,7 @@ const Search = () => {
             hover:shadow-md 
             transition 
             cursor-pointer
+            md:min-w-[348px]
             "
         >
             <div
@@ -29,20 +30,30 @@ const Search = () => {
                     text-sm 
                     font-semibold 
                     px-6
+                    align-left
+                    text-ellipsis	
+                    overflow-hidden
+                    whitespace-nowrap
+                    min-w-[80px]
+                    flex-initial
                     "
                 >
                     N’importe où
                 </div>
                 <div
                     className="
-                    hidden 
+                    hidden
+                    relative
+                    px-6
                     sm:block 
                     text-sm 
-                    font-semibold 
-                    px-6 
                     border-x-[1px] 
-                    flex-1 
-                    text-center
+                    align-left
+                    text-ellipsis	
+                    overflow-hidden
+                    whitespace-nowrap
+                    min-w-[80px]
+                    flex-initial
                     "
                 >
                     Une semaine
@@ -50,16 +61,19 @@ const Search = () => {
                 <div
                     className="
                     text-sm 
-                    pl-6 
+                    pl-4
                     pr-2 
                     text-gray-600 
                     flex 
                     flex-row 
-                    items-center 
+                    text-left
+                    items-center
                     gap-3
                 ">
-                    <div className="hidden sm:block whitespace-nowrap">
-                        Ajouter des voyageurs
+                    <div className="hidden sm:block overflow-hidden min-w-[80px]">
+                        <p className="truncate w-[100px] sm:w-[200px] md:w-[80px] lg:w-[145px]">
+                            Ajouter des voyageurs
+                        </p>
                     </div>
                     <div
                         className="
@@ -67,6 +81,7 @@ const Search = () => {
                             bg-rose-500
                             rounded-full
                             text-white
+                           
                         "
                     >
                         <BiSearch size={18} />
