@@ -10,7 +10,7 @@ import ToasterProvider from "./providers/ToasterProvider";
 import './globals.css';
 
 export const metadata = {
-  title: 'Airbnb',
+  title: 'AirbnbClone',
   description: 'Airbnb Clone',
 }
 const font = Nunito({

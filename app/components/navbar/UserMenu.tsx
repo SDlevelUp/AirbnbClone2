@@ -33,8 +33,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
                     className="
                     hidden
                     md:block
-                    text-sm 
-                    font-semibold 
+                    text-base
+                    font-bold
                     py-3 
                     px-4 
                     rounded-full 
