@@ -85,6 +85,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         overflow-hidden 
                         right-0 
                         top-12 
+                        sm:top-[5rem]
                         text-sm
                     "
                 >
