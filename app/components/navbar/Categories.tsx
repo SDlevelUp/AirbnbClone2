@@ -181,7 +181,7 @@ const Categories = () => {
 
     return (
         <Container>
-            <div className="pt-4 flex flex-row items-center justify-between custom-scrollbar" style={{
+            <div className="pt-2 flex flex-row items-center justify-between custom-scrollbar" style={{
                 scrollBehavior: 'smooth'
             }}>
                 <button onClick={scrollLeft} className={`mr-2 ${scrollableLeft ? 'opacity-100' : ''}`}>
