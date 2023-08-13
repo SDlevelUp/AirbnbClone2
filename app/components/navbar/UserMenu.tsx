@@ -32,12 +32,10 @@ const UserMenu: React.FC<UserMenuProps> = ({
                     onClick={() => { }}
                     className="
                     hidden
-                    lg:flex
-                    xl:flex
-                    md:hidden
+                    md:block
                     text-sm 
                     font-semibold 
-                    py-2
+                    py-3 
                     px-4 
                     rounded-full 
                     hover:bg-neutral-100 
@@ -51,7 +49,6 @@ const UserMenu: React.FC<UserMenuProps> = ({
                     onClick={toggleOpen}
 
                     className="
-                        p-4
                         md:py-1
                         md:px-2
                         border-[1px] 
@@ -59,7 +56,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         flex 
                         flex-row 
                         items-center 
-                        gap-3
+                        gap-3 
                         rounded-full 
                         cursor-pointer 
                         hover:shadow-md 
@@ -85,7 +82,6 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         overflow-hidden 
                         right-0 
                         top-12 
-                        sm:top-[5rem]
                         text-sm
                     "
                 >

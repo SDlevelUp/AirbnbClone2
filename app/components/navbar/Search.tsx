@@ -29,7 +29,6 @@ const Search = () => {
                     text-sm 
                     font-semibold 
                     px-6
-                    whitespace-nowrap
                     "
                 >
                     N’importe où
@@ -44,7 +43,6 @@ const Search = () => {
                     border-x-[1px] 
                     flex-1 
                     text-center
-                    whitespace-nowrap
                     "
                 >
                     Une semaine

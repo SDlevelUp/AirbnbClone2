@@ -20,6 +20,7 @@ import Modal from "./Modal";
 import Input from "../inputs/Input";
 import Heading from "../Heading";
 import Button from "../Button";
+import { BsFacebook } from "react-icons/bs";
 
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
@@ -112,6 +113,13 @@ const RegisterModal = () => {
                 label="Continuer avec Github"
                 icon={AiFillGithub}
                 onClick={() => signIn('github')}
+            />
+
+            <Button
+                outline
+                label="Continuer avec Facebook"
+                icon={BsFacebook}
+                onClick={() => signIn('facebook')}
             />
 
             <div
