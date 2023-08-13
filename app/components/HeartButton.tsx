@@ -5,7 +5,7 @@ const HeartButton: React.FC = () => {
         <div
             className="
                 relative
-              hover:text-rose-500
+                hover:text-[#B50D29]
                 transition
                 cursor-pointer
             "

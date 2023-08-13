@@ -5,16 +5,17 @@ const Search = () => {
     return (
         <div
             className="
-            border-[3px] border-black-900
+            border-[1px] 
+            border-gray-900
             w-full 
             md:w-auto 
             py-2 
             rounded-full 
-            shadow-lg
+            shadow-sm 
             hover:shadow-lg
             transition 
             cursor-pointer
-            md:min-w-[348px]
+            md:min-w-[300px]
             "
         >
             <div

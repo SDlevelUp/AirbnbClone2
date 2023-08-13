@@ -35,7 +35,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                     md:block
                     text-base
                     font-bold
-                    py-3 
+                    py-2 
                     px-4 
                     rounded-full 
                     hover:bg-neutral-100 
