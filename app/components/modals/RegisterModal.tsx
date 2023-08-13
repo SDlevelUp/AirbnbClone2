@@ -4,6 +4,7 @@ import axios from "axios";
 import { signIn } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
+
 import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
 import {
@@ -102,16 +103,17 @@ const RegisterModal = () => {
             <hr />
             <Button
                 outline
-                label="Continue avec Google"
+                label="Continuer avec Google"
                 icon={FcGoogle}
                 onClick={() => signIn('google')}
             />
             <Button
                 outline
-                label="Continue avec Github"
+                label="Continuer avec Github"
                 icon={AiFillGithub}
                 onClick={() => signIn('github')}
             />
+           
             <div
                 className="
             text-neutral-500 

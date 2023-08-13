@@ -41,6 +41,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         hover:bg-neutral-100 
                         transition 
                         cursor-pointer
+                        whitespace-nowrap
                     "
                 >
                     Mettre mon logement sur Airbnb
