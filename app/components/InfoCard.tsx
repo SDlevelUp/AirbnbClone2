@@ -45,7 +45,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
           </div>
         </div>
         <div className="flex flex-row justify-between items-center pt-2">
-          <div className="font-bold text-[15px] truncate w-33">{location}</div>
+          <div className="font-semibold text-[15px] truncate w-33">{location}</div>
           <div className="flex items-center gap-1 text-lg">
             <AiFillStar size={16} />
             <div>{rating}</div>
