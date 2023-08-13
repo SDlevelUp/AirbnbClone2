@@ -31,17 +31,18 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 <div
                     onClick={() => { }}
                     className="
-                        hidden
-                        md:block
-                        text-sm 
-                        font-semibold 
-                        py-3 
-                        px-4 
-                        rounded-full 
-                        hover:bg-neutral-100 
-                        transition 
-                        cursor-pointer
-                        whitespace-nowrap
+                    hidden
+                    lg:flex
+                    xl:flex
+                    md:hidden
+                    text-sm 
+                    font-semibold 
+                    py-2
+                    px-4 
+                    rounded-full 
+                    hover:bg-neutral-100 
+                    transition 
+                    cursor-pointer
                     "
                 >
                     Mettre mon logement sur Airbnb
@@ -83,7 +84,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         bg-white 
                         overflow-hidden 
                         right-0 
-                        top-15
+                        top-12 
                         text-sm
                     "
                 >

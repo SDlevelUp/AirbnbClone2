@@ -10,6 +10,7 @@ import Categories from './Categories';
 interface NavbarProps {
     currentUser?: SafeUser | null;
 }
+
 const Navbar: React.FC<NavbarProps> = ({
     currentUser,
 }) => {
@@ -19,18 +20,18 @@ const Navbar: React.FC<NavbarProps> = ({
                 className="
                     py-4 
                     border-b-[1px]
-                "
+          "
             >
                 <Container>
                     <div
                         className="
-                    flex 
-                    flex-row 
-                    items-center 
-                    justify-between
-                    gap-3
-                    md:gap-0
-                    "
+                            flex 
+                            flex-row 
+                            items-center 
+                            justify-between
+                            gap-3
+                            md:gap-0
+            "
                     >
                         <Logo />
                         <Search />
@@ -42,5 +43,6 @@ const Navbar: React.FC<NavbarProps> = ({
         </div>
     );
 }
+
 
 export default Navbar;

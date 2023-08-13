@@ -5,31 +5,31 @@ const Search = () => {
     return (
         <div
             className="
-                border-[1px] 
-                w-full 
-                md:w-auto 
-                py-2 
-                rounded-full 
-                shadow-sm 
-                hover:shadow-md 
-                transition 
-                cursor-pointer
+            border-[1px] 
+            w-full 
+            md:w-auto 
+            py-2 
+            rounded-full 
+            shadow-sm 
+            hover:shadow-md 
+            transition 
+            cursor-pointer
             "
         >
             <div
                 className="
-                    flex 
-                    flex-row 
-                    items-center 
-                    justify-between
+                flex 
+                flex-row 
+                items-center 
+                justify-between
             "
             >
                 <div
                     className="
-                        text-sm
-                        font-bold
-                        px-6
-                        whitespace-nowrap
+                    text-sm 
+                    font-semibold 
+                    px-6
+                    whitespace-nowrap
                     "
                 >
                     N’importe où
@@ -39,7 +39,7 @@ const Search = () => {
                     hidden 
                     sm:block 
                     text-sm 
-                    font-bold 
+                    font-semibold 
                     px-6 
                     border-x-[1px] 
                     flex-1 
