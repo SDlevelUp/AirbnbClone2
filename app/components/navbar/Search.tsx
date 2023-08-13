@@ -28,7 +28,6 @@ const Search = () => {
                 <div
                     className="
                     text-sm 
-                    font-semibold 
                     px-6
                     align-left
                     text-ellipsis	
@@ -36,6 +35,8 @@ const Search = () => {
                     whitespace-nowrap
                     min-w-[80px]
                     flex-initial
+                    text-gray-900 
+                    font-bold
                     "
                 >
                     N’importe où
@@ -54,6 +55,8 @@ const Search = () => {
                     whitespace-nowrap
                     min-w-[80px]
                     flex-initial
+                    text-gray-900 
+                    font-bold
                     "
                 >
                     Une semaine
@@ -70,7 +73,7 @@ const Search = () => {
                     items-center
                     gap-3
                 ">
-                    <div className="hidden sm:block overflow-hidden min-w-[80px]">
+                    <div className="hidden sm:block overflow-hidden min-w-[80px] text-[#717171] font-normal">
                         <p className="truncate w-[100px] sm:w-[200px] md:w-[80px] lg:w-[145px]">
                             Ajouter des voyageurs
                         </p>
