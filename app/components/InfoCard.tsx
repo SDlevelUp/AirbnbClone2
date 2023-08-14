@@ -1,7 +1,6 @@
 import React from "react";
 import HeartButton from "./HeartButton";
 import Image from "next/image";
-
 import { AiFillStar } from "react-icons/ai";
 interface InfoCardProps {
   name: string;
@@ -45,14 +44,14 @@ const InfoCard: React.FC<InfoCardProps> = ({
           </div>
         </div>
         <div className="flex flex-row justify-between items-center pt-2">
-          <div className="font-semibold text-[15px] truncate w-33">{location}</div>
-          <div className="flex items-center gap-1 text-lg">
-            <AiFillStar size={16} />
-            <div>{rating}</div>
+          <div className="font-semibold text-[14px] truncate w-33">{location}</div>
+          <div className="flex align-center gap-1 text-lg items-center">
+            <AiFillStar size={15}  />
+            <span>{rating}</span>
           </div>
         </div>
-        <div className=" text-[#6B7280] text-[15px]">{description}</div>
-        <div className="flex flex-row items-center gap-1 text-[15px]">
+        <div className=" text-[#6B7280] text-[14px]">{description}</div>
+        <div className="flex flex-row items-center gap-1 text-[14px]">
           <div className="font-bold">{price} €</div>
           <div className="font-normal text-[#6B7280]">par nuit</div>
         </div>

@@ -8,7 +8,6 @@ body,
     height: 100%;
 }
 
-
-.custom-border-color {
-    border-color: #B50D29;
-  }
+span {
+    font-size: 15px;
+}

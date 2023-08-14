@@ -1,35 +1,49 @@
 'use client';
+
 import { useCallback, useState } from "react";
-import { SafeUser } from '@/app/types';
 import { signOut } from "next-auth/react";
 import { RiMenu2Line } from "react-icons/ri";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
+
 import MenuItem from "./MenuItem";
 import Avatar from "../Avatar";
 
-import useRegisterModal from "@/app/hooks/useRegisterModal";
+import { SafeUser } from '@/app/types';
 import useLoginModal from "@/app/hooks/useLoginModal";
-
+import useRegisterModal from "@/app/hooks/useRegisterModal";
+import useRentModal from "@/app/hooks/useRentModal";
 interface UserMenuProps {
     currentUser?: SafeUser | null
 }
-// const router = useRouter();
+
 const UserMenu: React.FC<UserMenuProps> = ({
     currentUser,
 }) => {
+    const router = useRouter();
 
     const registerModal = useRegisterModal();
     const loginModal = useLoginModal();
+    const rentModal = useRentModal();
+
     const [isOpen, setIsOpen] = useState(false);
+
     const toggleOpen = useCallback(() => {
         setIsOpen((value) => !value);
     }, []);
+
+    const onRent = useCallback(() => {
+        if (!currentUser) {
+            return loginModal.onOpen();
+        }
+        rentModal.onOpen();
+    }, [currentUser, loginModal, rentModal])
+
 
     return (
         <div className="relative ">
             <div className="flex flex-row items-center gap-3">
                 <div
-                    onClick={() => { }}
+                    onClick={onRent}
                     className="
                     hidden
                     md:block
@@ -116,7 +130,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                                 <hr />
                                 <MenuItem
                                     label={<span className="text-[#161616] font-normal ">Mettre mon logement sur Airbnb</span>}
-                                    onclick={() => { }}
+                                    onclick={rentModal.onOpen}
                                 />
                                 <MenuItem
                                     label={<span className="text-[#161616] font-normal">Mon compte</span>}

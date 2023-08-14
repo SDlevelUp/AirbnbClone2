@@ -1,7 +1,7 @@
 'use client';
-import { useSearchParams } from 'next/navigation';
+
 import React, { useRef, useState, useEffect } from 'react';
-import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 import CategoryBox from "../CategoryBox";
 import Container from "../Container";
@@ -32,17 +32,18 @@ import {
     GiRiver,
 } from 'react-icons/gi';
 
+import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
 export const categories = [
     {
         label: 'Plages',
         icon: TbBeach,
-        description: 'Cette propriété est proche de la plage!',
+        description: 'Cette propriété est proche de la plage',
     },
     {
         label: 'Campings',
         icon: GiCampingTent,
-        description: 'Vous logerez dans un caomping'
+        description: 'Cette propriété est un camping'
     },
     {
         label: 'Modernes',
@@ -52,110 +53,115 @@ export const categories = [
     {
         label: 'Nouveautés',
         icon: GoKey,
-        description: 'Cette propriété est moderne'
+        description: 'Cette propriété est nouvelle'
     },
     {
         label: 'Skis',
         icon: FaSkiingNordic,
-        description: 'Cette propriété est moderne'
+        description: 'Cette propriété est proche d’une piste skiable'
     },
     {
         label: 'Iles',
         icon: GiIsland,
-        description: 'Cette propriété est moderne'
+        description: 'Cette propriété est sur une île'
     },
     {
         label: 'Parcs',
         icon: MdPark,
-        description: 'Cette propriété est moderne'
+        description: 'Cette propriété est proche d’un parc national'
     },
     {
         label: 'Sensations fortes',
         icon: GiFlyingFox,
-        description: 'Cette propriété est moderne'
+        description: 'Cette propriété propose des activités à sensations fortes'
     },
     {
         label: 'Piscines',
         icon: TbPool,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est un château'
     },
     {
         label: 'Fermes',
         icon: GiBarn,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est une ferme'
     },
     {
-        label: 'Golfs',
+        label: 'Golf',
         icon: GiGolfTee,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est proche d’un terrain de golf'
     },
     {
         label: 'Tipi',
         icon: GiTipi,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est isolée'
     },
     {
         label: 'Hobbits',
         icon: GiHobbitDwelling,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété possède est proche de la forêt'
     },
     {
         label: 'Maisons familiales',
         icon: GiFamilyHouse,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est une piscine familiale'
     },
     {
         label: 'Montagnes',
         icon: FaMountain,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété se situe dans les montagnes'
     },
     {
         label: 'Moulins à eaux',
         icon: GiWaterMill,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est un moulin à eau'
     },
     {
         label: 'Chateaux',
         icon: GiCastle,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est un château'
     },
     {
         label: 'Séjours Déconnectés',
         icon: BsWifiOff,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété propose un séjour déconnecté'
     },
 
     {
-        label: 'Rétros',
+        label: 'Rétro',
         icon: GiRetroController,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est rétro'
     },
     {
         label: 'Sous les tropiques',
         icon: GiPalmTree,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété se situe dans un lieu tropical'
     },
     {
         label: 'Désert',
         icon: GiDesert,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est en plien désert'
     },
     {
         label: 'Bord de rivière',
         icon: GiRiver,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété est aux abords d’une rivière'
     },
     {
         label: 'Villes emblématiques',
         icon: GiPisaTower,
-        description: 'Cette propriété possède une piscine privée ou a proximité'
+        description: 'Cette propriété se situe dans une ville emblématique'
     },
 ]
 
 const Categories = () => {
     const params = useSearchParams();
     const category = params?.get('category');
+    const pathname = usePathname();
+    const isMainPage = pathname === '/';
 
+    if (!isMainPage) {
+        return null;
+    }
     const containerRef = useRef<HTMLDivElement | null>(null);
     const [scrollableLeft, setScrollableLeft] = useState(false);
     const [scrollableRight, setScrollableRight] = useState(false);

@@ -1,11 +1,15 @@
-import getCurrentUser from "./actions/getCurrentUser";
+import './globals.css';
+
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
 import LoginModal from "./components/modals/LoginModal";
 import RegisterModal from "./components/modals/RegisterModal";
+import RentModal from "./components/modals/RentModal";
+
+import getCurrentUser from "./actions/getCurrentUser";
 import ToasterProvider from "./providers/ToasterProvider";
 
-import './globals.css';
+
 
 export const metadata = {
   title: 'AirbnbClone',
@@ -24,6 +28,7 @@ export default async function RootLayout({
       <body>
         <ClientOnly>
           <ToasterProvider />
+          <RentModal />
           <LoginModal />
           <RegisterModal />
           <Navbar currentUser={currentUser} />

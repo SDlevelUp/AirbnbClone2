@@ -49,7 +49,7 @@ const Search = () => {
                     px-6
                     sm:block 
                     text-sm 
-                    border-x-[1px] 
+                    border-x-[2px] 
                     align-left
                     text-ellipsis	
                     overflow-hidden
@@ -91,7 +91,6 @@ const Search = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

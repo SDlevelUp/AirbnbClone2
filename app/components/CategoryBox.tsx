@@ -1,3 +1,5 @@
+'use client';
+
 import { IconType } from "react-icons";
 import { useRouter, useSearchParams } from "next/navigation"; // gestion des routes au clique des icones
 import { useCallback } from "react";
@@ -56,7 +58,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
                 flex-col 
                 items-center 
                 justify-center 
-                gap-2
+                gap-3
                 p-3
                 border-b-2
                 hover:text-neutral-800

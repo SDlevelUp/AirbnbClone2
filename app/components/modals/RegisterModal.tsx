@@ -34,7 +34,6 @@ const RegisterModal = () => {
         },
     } = useForm<FieldValues>({
         defaultValues: {
-            name: '',
             email: '',
             password: ''
         },
@@ -78,14 +77,6 @@ const RegisterModal = () => {
                     required
                 />
                 <Input
-                    id="name"
-                    label="Nom"
-                    disabled={isLoading}
-                    register={register}
-                    errors={errors}
-                    required
-                />
-                <Input
                     id="password"
                     label="Mot de passe"
                     type="password"
@@ -107,8 +98,6 @@ const RegisterModal = () => {
                 icon={FcGoogle}
                 onClick={() => signIn('google')}
             />
-           
-
             <Button
                 outline
                 label="Continuer avec Facebook"
@@ -118,11 +107,11 @@ const RegisterModal = () => {
 
             <div
                 className="
-            text-neutral-500 
-            text-center 
-            mt-4 
-            font-light
-            "
+                    text-neutral-500 
+                    text-center 
+                    mt-4 
+                    font-light
+                "
             >
                 <p>Tu as déjà un compte?
                     <span

@@ -67,7 +67,7 @@ const LoginModal = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-4">
                 <Heading
-                    title="Salut! Content de te revoir !"
+                    title="Content de te revoir !"
                     subtitle="Connectes-toi!"
                 />
                 <Input
@@ -100,7 +100,7 @@ const LoginModal = () => {
                 icon={FcGoogle}
                 onClick={() => signIn('google')}
             />
-            
+
             <Button
                 outline
                 label="Continuer avec Facebook"
@@ -108,12 +108,18 @@ const LoginModal = () => {
                 onClick={() => signIn('facebook')}
             />
             <div className="
-                text-neutral-500 text-center mt-4 font-light">
-                <p>C’est ton premier jour sur Airbnb?
+                    text-neutral-500 
+                    text-center 
+                    mt-4 
+                    font-light
+                "
+            >
+                <p>Tu n’as pas de compte?
                     <span
                         onClick={toggle}
                         className="
-                            text-neutral-800
+                          text-black
+                            font-medium
                             cursor-pointer 
                             hover:underline
                         "

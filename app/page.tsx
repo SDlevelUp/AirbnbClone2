@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import ClientOnly from "./components/ClientOnly";
 
-import { PuffLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 
 import listingsData from "../data/listings.json";
 import InfoCard from "./components/InfoCard";
@@ -13,7 +13,6 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Simulate loading delay
         setTimeout(() => {
             setLoading(false);
         }, 3000);
@@ -25,8 +24,8 @@ export default function Home() {
                 <div className="pt-24">
                     {loading ? (
                         <div className='h-[70vh] flex flex-col justify-center items-center'>
-                            <PuffLoader size={100} color='#B50D29' />
-                            <p className="mt-2 text-black">Attention, ça charge...</p>
+                            <ClipLoader size={95} color='#B50D29' />
+                            <p className="mt-2 text-black">Ça charge...</p>
                         </div>
                     ) : (
                         <div
