@@ -109,22 +109,22 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             <>
 
                                 <MenuItem
-                                    label={<span className="font-bold">Messages</span>}
+                                    label={<span className="font-semibold">Messages</span>}
                                     onclick={() => { }}
                                 />
 
                                 <MenuItem
-                                    label={<span className="font-bold">Notifications</span>}
+                                    label={<span className="font-semibold">Notifications</span>}
                                     onclick={() => { }}
                                 />
 
                                 <MenuItem
-                                    label={<span className="font-bold">Voyages</span>}
+                                    label={<span className="font-semibold">Voyages</span>}
                                     onclick={() => { }}
                                 />
 
                                 <MenuItem
-                                    label={<span className="font-bold">Favoris</span>}
+                                    label={<span className="font-semibold">Favoris</span>}
                                     onclick={() => { }}
                                 />
                                 <hr />

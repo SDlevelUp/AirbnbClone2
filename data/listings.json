@@ -2,7 +2,7 @@
     {
         "id": "1",
         "description": "Villa moderne",
-        "cover": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TWFpc29uJTIwZGUlMjBsdXhlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        "cover": "https://images.unsplash.com/photo-1576493169316-0745093ae312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHZpbGxhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
         "location": "Saint Denis D'Oléron, Ile d'Oléron",
         "rating": 4,
         "price": 600

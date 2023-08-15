@@ -30,14 +30,15 @@ const InfoCard: React.FC<InfoCardProps> = ({
           <Image
             fill
             className="
+                priority
                 object-cover 
                 h-full 
                 w-full 
                 group-hover:scale-110 
-                transition
-              "
+                transition"
             src={cover}
             alt={description}
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 200px, 300px"
           />
           <div className="absolute top-3 right-3">
             <HeartButton />
@@ -46,7 +47,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
         <div className="flex flex-row justify-between items-center pt-2">
           <div className="font-semibold text-[14px] truncate w-33">{location}</div>
           <div className="flex align-center gap-1 text-lg items-center">
-            <AiFillStar size={15}  />
+            <AiFillStar size={15} />
             <span>{rating}</span>
           </div>
         </div>
