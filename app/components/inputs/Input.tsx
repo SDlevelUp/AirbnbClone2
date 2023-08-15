@@ -34,10 +34,10 @@ const Input: React.FC<InputProps> = ({
                 <BiDollar
                     size={24}
                     className="
-            text-neutral-700
-            absolute
-            top-5
-            left-2
+                    text-neutral-700
+                    absolute
+                    top-5
+                    left-2
           "
                 />
             )}
@@ -61,8 +61,8 @@ const Input: React.FC<InputProps> = ({
           disabled:opacity-70
           disabled:cursor-not-allowed
           ${formatPrice ? 'pl-9' : 'pl-4'}
-          ${errors[id] ? 'border-rose-500' : 'border-neutral-300'}
-          ${errors[id] ? 'focus:border-rose-500' : 'focus:border-black'}
+          ${errors[id] ? 'border-[#B50D29]' : 'border-neutral-300'}
+          ${errors[id] ? 'focus:border-[#B50D29]' : 'focus:border-black'}
         `}
             />
             <label
@@ -80,7 +80,7 @@ const Input: React.FC<InputProps> = ({
           peer-placeholder-shown:translate-y-0 
           peer-focus:scale-75
           peer-focus:-translate-y-4
-          ${errors[id] ? 'text-rose-500' : 'text-zinc-400'}
+          ${errors[id] ? 'text-[#B50D29]' : 'text-zinc-400'}
         `}
             >
                 {label}

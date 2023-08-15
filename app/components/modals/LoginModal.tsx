@@ -58,7 +58,7 @@ const LoginModal = () => {
             });
     }
 
-    const toggle = useCallback(() => {
+    const onToggle = useCallback(() => {
         loginModal.onClose();
         registerModal.onOpen();
     }, [loginModal, registerModal])
@@ -93,7 +93,11 @@ const LoginModal = () => {
 
     const footerContent = (
         <div className="flex flex-col gap-4 mt-3">
-            <hr />
+            <div className="flex items-center gap-2">
+                <hr className="flex-grow" />
+                <span>ou</span>
+                <hr className="flex-grow" />
+            </div>
             <Button
                 outline
                 label="Continuer avec Google"
@@ -114,18 +118,16 @@ const LoginModal = () => {
                     font-light
                 "
             >
-                <p>Tu n’as pas de compte?
+                <p>Tu n'as pas de compte?
                     <span
-                        onClick={toggle}
+                        onClick={onToggle}
                         className="
-                          text-black
-                            font-medium
+                            text-neutral-800
+                            font-semibold
                             cursor-pointer 
                             hover:underline
-                        "
-                    >
-                        Créer un compte
-                    </span>
+                "
+                    > Créer ton compte</span>
                 </p>
             </div>
         </div>
