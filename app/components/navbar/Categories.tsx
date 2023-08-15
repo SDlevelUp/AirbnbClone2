@@ -153,15 +153,13 @@ export const categories = [
     },
 ]
 
+
 const Categories = () => {
     const params = useSearchParams();
     const category = params?.get('category');
     const pathname = usePathname();
     const isMainPage = pathname === '/';
 
-    if (!isMainPage) {
-        return null;
-    }
     const containerRef = useRef<HTMLDivElement | null>(null);
     const [scrollableLeft, setScrollableLeft] = useState(false);
     const [scrollableRight, setScrollableRight] = useState(false);
@@ -184,6 +182,10 @@ const Categories = () => {
             containerRef.current.scrollLeft += 200;
         }
     };
+
+    if (!isMainPage) {
+        return null;
+    }
 
     return (
         <Container>
