@@ -41,6 +41,7 @@
     "react-social-login": "^3.4.17",
     "react-social-login-buttons": "^3.9.1",
     "react-spinners": "^0.13.8",
+    "uuid": "^9.0.0",
     "validator": "^13.11.0",
     "world-countries": "^4.0.0",
     "zustand": "^4.3.9"
