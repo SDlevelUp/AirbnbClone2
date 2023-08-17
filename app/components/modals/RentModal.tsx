@@ -6,9 +6,11 @@ import { FieldValues, useForm } from "react-hook-form";
 import { categories } from "../navbar/Categories";
 
 import Modal from "./Modal";
-import useRentModal from "@/app/hooks/useRentModal";
 import Heading from "../Heading";
 import CategoryInput from "../inputs/CategoryInput";
+import CountrySelected from "../inputs/CountrySelected";
+
+import useRentModal from "@/app/hooks/useRentModal";
 
 enum STEPS {
     CATEGORY = 0,
@@ -112,11 +114,29 @@ const RentModal = () => {
         </div>
     )
 
+    if (step === STEPS.LOCATION) {
+        bodyContent = (
+            <div className="
+                flex
+                flex-col
+                gap-8
+            "
+            >
+                <Heading
+                    title="Où se trouve cotre bien ?"
+                    subtitle="Aidez les voyageurs à vous trouver !"
+                />
+                <CountrySelected/>
+            </div>
+        )
+    }
+
+
     return (
         <Modal
             isOpen={rentModal.isOpen}
             onClose={rentModal.onClose}
-            onSubmit={rentModal.onClose}
+            onSubmit={onNext}
             actionLabel={actionlabel}
             secondaryActionLabel={secondaryActionLabel}
             secondaryAction={step === STEPS.CATEGORY ? undefined : onBack}
