@@ -1,5 +1,7 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+import { useMemo, useState } from "react";
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import {
@@ -8,8 +10,6 @@ import {
     useForm
 } from 'react-hook-form';
 import dynamic from 'next/dynamic'
-import { useRouter } from 'next/navigation';
-import { useMemo, useState } from "react";
 
 import useRentModal from '@/app/hooks/useRentModal';
 
@@ -17,9 +17,10 @@ import CategoryInput from '../inputs/CategoryInput';
 import CountrySelect from "../inputs/CountrySelect";
 import Input from '../inputs/Input';
 import Counter from '../inputs/Counter';
+import ImageUpload from '../inputs/ImageUpload';
 
-import Modal from "./Modal";
 import { categories } from '../navbar/Categories';
+import Modal from "./Modal";
 import Heading from '../Heading';
 
 enum STEPS {
@@ -66,6 +67,7 @@ const RentModal = () => {
     const guestCount = watch('guestCount');
     const roomCount = watch('roomCount');
     const bathroomCount = watch('bathroomCount');
+    const imageSrc = watch('imageSrc');
 
     const Map = useMemo(() => dynamic(() => import('../Map'), {
         ssr: false
@@ -95,14 +97,14 @@ const RentModal = () => {
 
         axios.post('/api/listings', data)
             .then(() => {
-                toast.success('Liste crée!');
+                toast.success('Annonce créée!');
                 router.refresh();
                 reset();
                 setStep(STEPS.CATEGORY)
                 rentModal.onClose();
             })
             .catch(() => {
-                toast.error('Oops, quelque chose ne va pas.');
+                toast.error('Ooups, quelque chose ne va pas.');
             })
             .finally(() => {
                 setIsLoading(false);
@@ -209,6 +211,10 @@ const RentModal = () => {
                     title="Ajoutez une photo de votre logement"
                     subtitle="Montrez-leur combien il est accueillant!"
                 />
+                <ImageUpload
+                    value={imageSrc}
+                    onChange={(value) => setCustomValue('imageSrc', value)}
+                />
             </div>
         )
     }
@@ -250,7 +256,7 @@ const RentModal = () => {
                 />
                 <Input
                     id="price"
-                    label="Price"
+                    label="Prix"
                     formatPrice
                     type="number"
                     disabled={isLoading}

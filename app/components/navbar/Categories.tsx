@@ -36,52 +36,52 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
 export const categories = [
     {
-        label: 'Plages',
+        label: 'Plage',
         icon: TbBeach,
         description: 'Cette propriété est proche de la plage',
     },
     {
-        label: 'Campings',
+        label: 'Camping',
         icon: GiCampingTent,
         description: 'Cette propriété est un camping'
     },
     {
-        label: 'Modernes',
+        label: 'Moderne',
         icon: MdOutlineVilla,
         description: 'Cette propriété est moderne'
     },
     {
-        label: 'Nouveautés',
+        label: 'Nouveauté',
         icon: GoKey,
         description: 'Cette propriété est nouvelle'
     },
     {
-        label: 'Skis',
+        label: 'Ski',
         icon: FaSkiingNordic,
         description: 'Cette propriété est proche d’une piste skiable'
     },
     {
-        label: 'Iles',
+        label: 'Ile',
         icon: GiIsland,
         description: 'Cette propriété est sur une île'
     },
     {
-        label: 'Parcs',
+        label: 'Parc',
         icon: MdPark,
         description: 'Cette propriété est proche d’un parc national'
     },
     {
-        label: 'Sensations fortes',
+        label: 'Sensation forte',
         icon: GiFlyingFox,
         description: 'Cette propriété propose des activités à sensations fortes'
     },
     {
-        label: 'Piscines',
+        label: 'Piscine',
         icon: TbPool,
         description: 'Cette propriété est un château'
     },
     {
-        label: 'Fermes',
+        label: 'Ferme',
         icon: GiBarn,
         description: 'Cette propriété est une ferme'
     },
@@ -96,32 +96,32 @@ export const categories = [
         description: 'Cette propriété est isolée'
     },
     {
-        label: 'Hobbits',
+        label: 'Hobbit',
         icon: GiHobbitDwelling,
         description: 'Cette propriété possède est proche de la forêt'
     },
     {
-        label: 'Maisons familiales',
+        label: 'Maison familiale',
         icon: GiFamilyHouse,
         description: 'Cette propriété est une piscine familiale'
     },
     {
-        label: 'Montagnes',
+        label: 'Montagne',
         icon: FaMountain,
         description: 'Cette propriété se situe dans les montagnes'
     },
     {
-        label: 'Moulins à eaux',
+        label: 'Moulin à eaux',
         icon: GiWaterMill,
         description: 'Cette propriété est un moulin à eau'
     },
     {
-        label: 'Chateaux',
+        label: 'Chateau',
         icon: GiCastle,
         description: 'Cette propriété est un château'
     },
     {
-        label: 'Séjours Déconnectés',
+        label: 'Séjour Déconnecté',
         icon: BsWifiOff,
         description: 'Cette propriété propose un séjour déconnecté'
     },
@@ -147,7 +147,7 @@ export const categories = [
         description: 'Cette propriété est aux abords d’une rivière'
     },
     {
-        label: 'Villes emblématiques',
+        label: 'Ville emblématique',
         icon: GiPisaTower,
         description: 'Cette propriété se situe dans une ville emblématique'
     },
