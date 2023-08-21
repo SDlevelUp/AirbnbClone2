@@ -1,22 +1,31 @@
-import React from "react";
+'use client';
+
 import HeartButton from "./HeartButton";
 import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
+import {
+  SafeListing,
+  SafeUser
+} from "@/app/types";
 interface InfoCardProps {
+  data,
   name: string;
   description: string;
   cover: string;
   location: string;
   price: number;
   rating: number;
+  currentUser?: SafeUser | null;
 }
 
 const InfoCard: React.FC<InfoCardProps> = ({
+  data,
   description,
   cover,
   location,
   rating,
   price,
+  currentUser,
 }) => {
   return (
     <div className="col-span-1 cursor-pointer group pb-4">
@@ -41,7 +50,10 @@ const InfoCard: React.FC<InfoCardProps> = ({
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 200px, 300px"
           />
           <div className="absolute top-3 right-3">
-            <HeartButton />
+            <HeartButton
+              listingId={data.id}
+              currentUser={currentUser}
+            />
           </div>
         </div>
         <div className="flex flex-row justify-between items-center pt-2">

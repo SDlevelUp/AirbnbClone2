@@ -42,6 +42,7 @@ export default function Home() {
                         >
                             {listingsData.map((listing) => (
                                 <InfoCard
+                                    data={listing}
                                     key={listing.id}
                                     name=""
                                     description={listing.description}
