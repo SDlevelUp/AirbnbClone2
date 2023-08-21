@@ -1,5 +1,3 @@
-'use client'
-
 interface MenuItemProps {
     label: React.ReactNode;
     onclick: () => void;

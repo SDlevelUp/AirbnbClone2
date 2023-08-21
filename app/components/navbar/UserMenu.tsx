@@ -125,7 +125,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
 
                                 <MenuItem
                                     label={<span className="font-semibold">Favoris</span>}
-                                    onclick={() => router.push('/favoris')}
+                                    onclick={() => router.push('/favorites')}
                                 />
                                 <hr />
                                 <MenuItem
