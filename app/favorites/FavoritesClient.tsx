@@ -2,8 +2,7 @@ import { SafeListing, SafeUser } from "@/app/types";
 
 import Heading from "@/app/components/Heading";
 import Container from "@/app/components/Container";
-import InfoCard from "@/app/components/InfoCard";
-import listingsData from "@/data/listings.json";
+import InfoCard from "@/app/listings/InfoCard";
 
 interface FavoritesClientProps {
     listings: SafeListing[],
@@ -11,6 +10,7 @@ interface FavoritesClientProps {
 }
 
 const FavoritesClient: React.FC<FavoritesClientProps> = ({
+    listings,
     currentUser
 }) => {
     return (
@@ -21,24 +21,25 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
             />
             <div
                 className="
-          mt-10
-          grid 
-          grid-cols-1 
-          sm:grid-cols-2 
-          md:grid-cols-3 
-          lg:grid-cols-4
-          xl:grid-cols-5
-          2xl:grid-cols-6
-          gap-8
+                    mt-10
+                    grid 
+                    grid-cols-1 
+                    sm:grid-cols-2 
+                    md:grid-cols-3 
+                    lg:grid-cols-4
+                    xl:grid-cols-5
+                    2xl:grid-cols-6
+                    gap-8
         "
             >
-                {listingsData.map((listing) => (
+                {listings.map((listing: any) => (
                     <InfoCard
-                        data={listing}
+                        data={listing.id}
+                        name={listing.name}
+                        id={listing.id}
                         key={listing.id}
-                        name=""
                         description={listing.description}
-                        cover={listing.cover}
+                        image={listing.image}
                         location={listing.location}
                         price={listing.price}
                         rating={listing.rating}

@@ -1,4 +1,4 @@
-import InfoCard from "./InfoCard";
+import InfoCard from "../listings/InfoCard";
 import Products from "../../data/listings.json";
 import Container from "./Container";
 

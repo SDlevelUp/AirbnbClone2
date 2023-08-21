@@ -9,7 +9,6 @@ interface HeartButtonProps {
     currentUser?: SafeUser | null
 }
 
-
 const HeartButton: React.FC<HeartButtonProps> = ({
     listingId,
     currentUser
@@ -41,7 +40,7 @@ const HeartButton: React.FC<HeartButtonProps> = ({
             />
             <AiFillHeart size={24}
                 className={
-                    hasFavorited ? 'fill-rose-500' : 'fill-neutral-500/70'
+                    hasFavorited ? 'fill-[#B50D29]' : 'fill-neutral-500/70'
                 }
             />
         </div>
