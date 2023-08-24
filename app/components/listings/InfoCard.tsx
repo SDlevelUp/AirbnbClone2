@@ -1,7 +1,10 @@
+'use client';
+
 import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 import { SafeListing, SafeUser } from "@/app/types";
-import HeartButton from "../components/HeartButton";
+import HeartButton from "@/app/components/HeartButton";
+import { useRouter } from "next/navigation";
 
 interface InfoCardProps {
   id: string;
@@ -15,6 +18,7 @@ interface InfoCardProps {
   currentUser?: SafeUser | null;
 }
 const InfoCard: React.FC<InfoCardProps> = ({
+  id,
   name,
   data,
   description,
@@ -23,19 +27,26 @@ const InfoCard: React.FC<InfoCardProps> = ({
   rating,
   price,
   currentUser,
+
 }) => {
+
+  const router = useRouter();
+
   return (
-    <div className="col-span-1 cursor-pointer group pb-4">
+    <div
+      onClick={() => router.push(`/listings/${data.id}`)}
+      className="col-span-1 cursor-pointer group pb-4"
+    >
       <div className="flex flex-col w-full">
         <div className="aspect-square w-full relative overflow-hidden rounded-xl">
           <Image
             fill
             className="
-    object-cover 
-    h-full 
-    w-full 
-    group-hover:scale-110 
-    transition
+              object-cover 
+              h-full 
+              w-full 
+              group-hover:scale-110 
+              transition
   "
             src={image ?? ""}
             alt="Listing"

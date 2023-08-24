@@ -1,4 +1,3 @@
-
 import EmptyState from "@/app/components/EmptyState";
 import ClientOnly from "@/app/components/ClientOnly";
 
@@ -15,8 +14,8 @@ const ListingPage = async () => {
     return (
       <ClientOnly>
         <EmptyState
-          title="Aucun favoris trouver"
-          subtitle="Essayez de changer ou supprimer des filtres."
+          title="No favorites found"
+          subtitle="Looks like you have no favorite listings."
         />
       </ClientOnly>
     );
@@ -31,5 +30,5 @@ const ListingPage = async () => {
     </ClientOnly>
   );
 }
- 
+
 export default ListingPage;

@@ -1,82 +1,12 @@
 [
     {
-        "id": "1",
+        "id": "584984cdfa0b462592d7e7687b5b8243",
         "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
+        "location": "Paris",
+        "locationValue": "Île-de-France",
+        "description": "Charming apartment",
+        "price": 150.75,
         "name": "....",
-        "rating": 5
-    },
-    {
-        "id": "2",
-        "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
-        "name": "....",
-        "rating": 5
-    },
-    {
-        "id": "3",
-        "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
-        "name": "....",
-        "rating": 5
-    },
-    {
-        "id": "4",
-        "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
-        "name": "....",
-        "rating": 5
-    },
-    {
-        "id": "5",
-        "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
-        "name": "....",
-        "rating": 5
-    },
-    {
-        "id": "6",
-        "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
-        "name": "....",
-        "rating": 5
-    },
-    {
-        "id": "7",
-        "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
-        "name": "....",
-        "rating": 5
-    },
-    {
-        "id": "8",
-        "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFpc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "location": "Scaër",
-        "locationValue": "Finistère",
-        "description": "Maison de charme",
-        "price": 210.5,
-        "name": "....",
-        "rating": 5
+        "rating": 4
     }
 ]

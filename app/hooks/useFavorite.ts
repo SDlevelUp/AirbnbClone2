@@ -1,50 +1,63 @@
-import { useCallback } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { useCallback, useMemo } from "react";
 import { toast } from "react-hot-toast";
-import { User } from "@prisma/client";
+
+import { SafeUser } from "@/app/types";
 
 import useLoginModal from "./useLoginModal";
 
 interface IUseFavorite {
   listingId: string;
-  currentUser?: User | null;
+  currentUser?: SafeUser | null
 }
 
 const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
   const router = useRouter();
+
   const loginModal = useLoginModal();
 
-  const hasFavorited = !!(currentUser?.favoriteIds.includes(listingId));
+  const hasFavorited = useMemo(() => {
+    const list = currentUser?.favoriteIds || [];
 
-  const toggleFavorite = useCallback(
-    async (e: React.MouseEvent<HTMLDivElement>) => {
-      e.stopPropagation();
+    return list.includes(listingId);
+  }, [currentUser, listingId]);
 
-      if (!currentUser) return loginModal.onOpen();
+  const toggleFavorite = useCallback(async (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
 
-      try {
-        let req;
-        if (hasFavorited) {
-          req = () => axios.delete(`/api/favorites/${listingId}`);
-        } else {
-          req = () => axios.post(`/api/favorites/${listingId}`);
-        }
+    if (!currentUser) {
+      return loginModal.onOpen();
+    }
 
-        await req();
-        router.refresh();
-        toast.success("Success");
-      } catch (error) {
-        toast.error("Something went wrong!");
+    try {
+      let request;
+
+      if (hasFavorited) {
+        request = () => axios.delete(`/api/favorites/${listingId}`);
+      } else {
+        request = () => axios.post(`/api/favorites/${listingId}`);
       }
-    },
-    [currentUser, hasFavorited, listingId, loginModal, router]
-  );
+
+      await request();
+      router.refresh();
+      toast.success('Success');
+    } catch (error) {
+      toast.error('Something went wrong.');
+    }
+  }, 
+  [
+    currentUser, 
+    hasFavorited, 
+    listingId, 
+    loginModal,
+    router
+  ]);
 
   return {
     hasFavorited,
     toggleFavorite,
-  };
-};
+  }
+}
 
 export default useFavorite;

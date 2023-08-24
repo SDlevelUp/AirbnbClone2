@@ -1,5 +1,5 @@
 import Container from "@/app/components/Container";
-import InfoCard from "@/app/listings/InfoCard";
+import InfoCard from "@/app/components/listings/InfoCard";
 import EmptyState from "@/app/components/EmptyState";
 import listingsData from "@/data/listings.json";
 
@@ -31,10 +31,11 @@ const Home = async ({ searchParams }: HomeProps) => {
             <Container>
                 <div className="pt-24">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
-                        {listingsData.map((listing) => (
+                        {listingsData.map((listing: any) => (
                             <InfoCard
+                                id={listing.id}
                                 key={listing.id}
-                                data={listing}
+                                data={listing.id}
                                 description={listing.description}
                                 image={listing.image}
                                 location={listing.location}
